@@ -50,7 +50,7 @@ li a {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -74,43 +74,71 @@ li a {
     padding: 20px;
 }
 
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
+.btnsesion {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    padding-bottom: 38px;
 }
 
-.card p {
+.btnsesion button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnsesion button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+.card {
+    border: 1px solid;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 30px;
+    background-color: darkgray;
+    box-shadow: 3px 1px 8px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content p {
     text-align: start;
     font-size: large;
     width: 70%;
+    margin-inline: auto;
 }
 
-img {
+.card-content a {
+    text-decoration: none;
+}
+
+.imagen {
     width: 200px;
+    height: 120px;
     border: black solid 1px;
 
 }
 
-img:hover {
+.imagen:hover {
     scale: 1.05;
     transition-duration: 0.5s;
 }
 
-
 #java,
 #c {
     background-color: white;
-}
-
-#css {
-    height: 150px;
-}
-
-.info {
-    text-align: center;
-
 }
 
 footer {
@@ -133,21 +161,8 @@ footer {
     margin: 0;
 }
 
-.btnsesion {
-    position: absolute;
-    transform: translateY(-50%);
-    right: 20px;
-    padding-bottom: 38px;
-}
-
-.btnsesion button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+.icon {
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.btnsesion button:hover {
-    background-color: #45a049;
+    text-decoration: none;
+    padding: 5px;
 }
