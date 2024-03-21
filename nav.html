@@ -1,35 +1,35 @@
-<nav>
+<nav class="nav">
     <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn">Lenguajes</a>
-            <div class="dropdown-content">
+        <li class="nav__item">
+            <a href="index.html" class="nav__a">Inicio</a>
+        </li>
+        <li class="nav__item nav__dropdown">
+            <a href="#" class=" nav__a nav__dropbtn">Lenguajes</a>
+            <div class="dropdown--content">
                 <a href="html.html">HTML</a>
                 <a href="css.html">CSS</a>
                 <a href="java.html">Java</a>
-                <!--
-                <a href="phyton.html">Python</a>
-                <a href="c#.html">C#</a>
-                <a href="c++.html">C++</a>
-                -->
             </div>
         </li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn">IDs</a>
-            <div class="dropdown-content">
+        <li class="nav__item nav__dropdown">
+            <a href="#" class="nav__dropbtn nav__a">IDs</a>
+            <div class="dropdown--content">
                 <a href="vsc.html">Visual Studio Code</a>
                 <a href="intelIJ.html">IntelIJ</a>
                 <a href="#">Eclipse</a>
                 <a href="#">NetBeans</a>
             </div>
         </li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li class="btn">
-
-            <div class="btnsesion">
-                <button><a href="login.html">iniciar sesion</a></button>
-            </div>
-
+        <li class="nav__item">
+            <a href="#" class="nav__a">Sobre Nosotros</a>
         </li>
+        <div class="nav__btns">
+            <li class="nav__item">
+                <a href="registro.html" class="btn--registro nav__a">Registrarse</a>
+            </li>
+            <li class="nav__item ">
+                <a href="login.html" class="btn--sesion nav__a">Iniciar sesion</a>
+            </li>
+        </div>
     </ul>
 </nav>
