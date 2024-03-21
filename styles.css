@@ -1,3 +1,5 @@
+/* Estilos generales */
+
 :root {
     --color-01: #f8f9faff;
     --color-02: #e9ecefff;
@@ -10,10 +12,8 @@
     --color-fondo: #151516;
 }
 
-
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 html {
@@ -21,28 +21,50 @@ html {
     color: #ccc;
 }
 
+body {
+    align-content: center;
+}
+
+/* Estilos del nav */
+
 .nav {
     border-radius: 30px;
     border-bottom: 1px solid #ccc;
-    text-align: center;
+}
 
-
+.nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav__item {
-    display: inline-block;
     padding: 10px 20px;
     margin: 10px;
+    list-style-type: none;
+    border-radius: 0;
+    outline: 0;
+    outline-offset: 0;
+    color: #ccc;
+    transition:
+    background-color .2s,
+    border-radius .2s,
+    outline .2s ,
+    outline-offset .2s;
+}
 
+.nav__item:hover{
+    background-color:var(--color-08) ;
+    border-radius: 10px;
+    outline: 2px solid var(--color-04);
+    outline-offset: -5px;
 }
 
 .nav__a {
     text-decoration: none;
     color: #ccc;
-    border-bottom: 1px solid var(--color-07);
 }
-
-
 
 .nav__dropdown {
     position: relative;
@@ -54,7 +76,6 @@ html {
     color: #ccc;
     background-color: inherit;
     cursor: pointer;
-
 }
 
 .dropdown--content {
@@ -83,27 +104,17 @@ html {
     display: block;
 }
 
-.btn--registro,
-.btn--sesion {
-    border: 1px solid var(--color-07);
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 2px var(--color-02);
-    background-color: var(--color-08);
-    position: relative;
-}
-
-.nav__btns {
-    display: inline-block;
-}
+/* Estilos del main */
 
 .titulo{
+    text-align: center;
     margin:25px 45px;
 }
 
 .card{
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 15px 40px;
@@ -114,8 +125,15 @@ html {
 
 .card--imagen{
     height: 160px;
+    width: 150px;
     padding: 20px;
-    
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
+
+.card--info{
+    text-wrap: pretty;
+    width: 800px;
 }
 
 .card--a{
@@ -123,6 +141,7 @@ html {
     font-size: larger;
     text-decoration: none;
     padding: 30px;
+    color: #ccc;
 }
 
 .card:hover{
@@ -130,6 +149,13 @@ html {
     color: #eee;
 }
 
+.card:hover .card--a{
+    scale: 1.10;
+    color: #04ff04bb;
+    text-shadow: 0 0 2px #04ff04aa;
+}
+
+/* Estilos del footer */
 
 footer {
     color: #ccc;
@@ -139,7 +165,6 @@ footer {
     bottom: 0;
     border-radius: 30px;
     border-top: 1px solid #ccc;
-    
 }
 
 .footer-content {
@@ -160,8 +185,5 @@ footer {
 
 .icon:hover{
     font-size: xx-large;
-    
-    
-
 }
 
