@@ -88,8 +88,8 @@ html {
     border: 1px solid var(--color-07);
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 0 2px var(--color-fondo);
-    background-color: var(--color-secundario);
+    box-shadow: 0 0 2px var(--color-02);
+    background-color: var(--color-08);
     position: relative;
 }
 
@@ -97,53 +97,39 @@ html {
     display: inline-block;
 }
 
-
-
-.content {
-    padding: 20px;
+.titulo{
+    margin:25px 45px;
 }
 
-h1 {
-    margin-left: 10px;
-}
-
-
-.card {
-    padding: 15px;
-    margin: 10px;
-    margin-bottom: 30px;
-}
-
-.card-content {
-    display: inline-flex;
+.card{
+    width: 80%;
+    display: flex;
     align-items: center;
-    width: -webkit-fill-available;
+    justify-content: center;
+    padding: 15px 40px;
+    margin: auto;
+    border-top: 2px solid #ccc;
+    transition: scale 0.4s 0.1s;
 }
 
-.card-content p {
-    text-align: start;
-    font-size: large;
-    width: 70%;
-    margin-inline: auto;
+.card--imagen{
+    height: 160px;
+    padding: 20px;
+    
 }
 
-.card-content a {
+.card--a{
+    text-align: end;
+    font-size: larger;
     text-decoration: none;
+    padding: 30px;
 }
 
-.card-content a:link{
-    text-decoration: none;
+.card:hover{
+    scale: 1.10;
+    color: #eee;
 }
 
-.imagen {
-    height: 150px;
-    width: 150px;
-}
-
-.imagen:hover {
-    scale: 1.05;
-    transition-duration: 0.5s;
-}
 
 footer {
     color: #ccc;
@@ -168,5 +154,14 @@ footer {
 .icon {
     color: var(--color-02);
     text-decoration: none;
-    padding: 5px;
+    padding: 25px;
+    transition: font-size 0.4s 0.2s;
 }
+
+.icon:hover{
+    font-size: xx-large;
+    
+    
+
+}
+
