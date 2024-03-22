@@ -17,7 +17,11 @@
 }
 
 html {
-    background-color: var(--color-fondo);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ccc;
 }
 
@@ -124,7 +128,7 @@ body {
 }
 
 .card--imagen{
-    height: 160px;
+    min-height: 160px;
     width: 150px;
     padding: 20px;
     box-sizing: border-box;
